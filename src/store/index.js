@@ -6,7 +6,7 @@ import { persistStore, persistReducer } from 'redux-persist'
 import storage from 'redux-persist/lib/storage'
 import thunk from "redux-thunk";
 
-import createRootReducer from "./reducers";
+import createRootReducer from "../reducers";
 
 export const history = createBrowserHistory();
 const persistedReducer = persistReducer({

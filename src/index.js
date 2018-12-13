@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import 'bootstrap/dist/css/bootstrap.css';
 import './index.css';
-import App from './App';
+import App from './components/App';
 import * as serviceWorker from './serviceWorker';
 
 import { Provider } from 'react-redux';
@@ -12,7 +12,7 @@ import { PersistGate } from 'redux-persist/integration/react'
 import { store, persistor, history } from "./store";
 
 // Uncomment to flush store
-// persistor.flush();
+// persistor.purge();
 
 ReactDOM.render(
 	<Provider store={store}>
